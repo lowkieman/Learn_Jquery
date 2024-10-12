@@ -7,11 +7,6 @@ $(document).ready(function(){
         $("P").show()
     });
 
-    $("h1").mouseenter(function(){
-        document.getElementById("h1").innerHTML = 
-        "You entered h1 element";
-    })
-
     $("#showme").mousedown(function(){
         document.getElementById("showme").style.background = "red";
     });
@@ -37,6 +32,28 @@ $(document).ready(function(){
 
     $("input").blur(function(){
         $(this).css("background-color", "orange")
+    });
+
+    $("h1").on("click", function(){
+        $(this).css("color", "red")
+    })
+
+    // adding multiple events using on() event
+
+    $("h1").on({
+        mouseenter: function(){
+            $(this).css("background-color", "lime")
+        },
+
+        mouseleave: function(){
+            $(this).css("color", "red");
+        },
+
+        click: function(){
+            $(this).css("background-color","purple")
+        }
+
+
     })
 })
 
@@ -51,4 +68,5 @@ $(document).ready(function(){
 * hover()
 * focus()
 * blur()
+* on()
 */
