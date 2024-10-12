@@ -5,15 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jquery effects</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
-    <script src=""></script>
-    <script src=""></script>
-    <script src=""></script>
-    <script src=""></script>
-    <script src=""></script>
-    <script src=""></script>
-    <script src=""></script>
+    <script src="1.hide&show.js"></script>
+    <script src="2.fade.js"></script>
+    <script src="3.slide.js"></script>
+    <script src="4.animate.js"></script>
+    <script src="5.stop.js"></script>
+    <script src="6.callback.js"></script>
+    <script src="7.chaining.js"></script>
+    <style>
+        body{
+            margin: 0;
+            position: relative;
+        }
+        .div1{
+            margin: 10px auto;
+            padding: 20px;
+            background-color: lime;
+            display: none;
+        }
+        .div2{
+            margin: 5px auto;
+            padding: 20px;
+            background-color: limegreen;
+            width: 100px;
+            position: absolute;
+            top: 20px;
+            left: 0;
+
+        }
+        .div4{
+            margin: 120px auto;
+        }
+    </style>
 </head>
 <body>
+    <div class="div1">
+        <h1 class="hideme" style="display: none; background-color: green;">hide me</h1>
+        <h1 class="showme" style="display: none; background-color: wheat;">show me</h1>
+        <button>toggle hide me</button>
+        <button id="fadein">Fade in</button>
+        <button id="fadeout">fade out</button>
+        <button id="fadetoggle">fade toggle</button>
+        <button id="fadeto"> fade to</button>
+    </div>
     
+    <div class="div2">
+        <button class="slidedown">slideDown()</button>
+        <button class="slideup">slideUp()</button>
+        <button class="slidetoggle">slideToggle()</button>
+    </div>
+    <div class="div3">
+        <button class="animate">animate</button>        
+        <button class="stop">stop</button>  
+    </div>
+
+    <div class="div4">
+        <p>
+            i am paragraph one
+        </p>
+        <p> i am paragraph two</p>
+    </div>
 </body>
 </html>
