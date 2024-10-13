@@ -8,8 +8,50 @@
     <script src="1.intro.js"></script>
     <script src="2.load.js"></script>
     <script src="3.get_post.js"></script>
+    <style>
+        table,td,th{
+            border: 1px solid red;
+            border-collapse: collapse;
+            text-transform: capitalize;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="one"></div>
+    <div><input type="text" name="" id="search" placeholder="Seach..."></div>
+
+    <table>
+        <thead>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>email</th>
+        </thead>
+        <tbody  id="myTable">
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@gmail.com</td>
+            </tr>
+            <tr>
+                <td>mary</td>
+                <td>moe</td>
+                <td>marymoe@gmail.com</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>booley</td>
+                <td>july@hotmail.com</td>
+            </tr>
+            <tr>
+                <td>anja</td>
+                <td>wans</td>
+                <td>anjawans@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="one">get eternal content</button>
+    <button class="two">get external 2</button>
+    <button class="get">GET</button>
+    <button class="post">POST</button>
 </body>
 </html>
