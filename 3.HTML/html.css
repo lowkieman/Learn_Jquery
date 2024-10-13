@@ -5,3 +5,23 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.p1,
+.p2{
+    color: green;
+    text-transform: capitalize;
+}
+.p3,
+.p4{
+    text-transform: uppercase;
+
+}
+
+.box{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    margin: 0 auto;
+    padding: 20px;
+    color: red;
+    background-color: black;
+}
